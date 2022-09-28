@@ -56,3 +56,165 @@ section {
     background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
 
 }
+ section > div {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  input[type="radio"] {
+    display: none;}
+    &:not(:disabled) ~ label {
+      cursor: pointer;
+    }
+    &:disabled ~ label {
+      color: hsla(150, 5%, 75%, 1);
+      border-color: hsla(150, 5%, 75%, 1);
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  
+
+  label { /* caractéristiques des labels*/
+    height: 100%;
+    display: block;
+    background: none;/*prend la couleur du background*/
+    border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
+    border-radius: 20px; /*Arrondis les coins des labels*/
+    padding: 1rem;  
+    margin-bottom: 1rem;
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+    color:white;
+  }
+  input[type="radio"]#reponse2:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+  
+  input[type="radio"]#reponse4:checked + label {
+
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse1:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse3:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+/* séparation : en haut css de la question 1 */
+
+
+  input[type="radio"]#reponse7:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+
+  input[type="radio"]#reponse6:checked + label {
+
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse5:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse8:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+/* séparation : en haut css de la question 2 */
+  input[type="radio"]#reponse12:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+
+  input[type="radio"]#reponse10:checked + label {
+
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse11:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse9:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+/* Séparation : en haut css de la question 3 */
+  input[type="radio"]#reponse15:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+
+  input[type="radio"]#reponse14:checked + label {
+
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse13:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse16:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+/* Séparation : en haut css de la question 4 */
+  p {
+    font-weight: 900;
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    section {
+      flex-direction: column;
+    }
+  }
