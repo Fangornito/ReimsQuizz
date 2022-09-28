@@ -17,10 +17,13 @@
 
 
 body {
-    background-color: var(--main-color);
+
     max-width: 800px;
     margin: auto;
+    background-size: 844px;
+    background-repeat: no-repeat;
 }
+
 
 .main-logo {
     display: flex;
@@ -33,13 +36,16 @@ body {
 .play-button {
     font-size: var(--size-play);
     padding: 2rem 2rem;
-    border-radius: 20px;
-    background-color: blueviolet;
+    border-radius: 15px;
+    background-color: rgb(251, 251, 251);
     align-self: stretch;
     text-align: center;
-    text-decoration: None;
-    margin-top:7rem;
-    color:white;
+    margin-top: 7rem;
+    border-width: 5px;
+    text-decoration: none;
+    box-shadow: 0px 8px #30024F;
+    color:#30024F;
+    font-family: "Berlin",sans-serif;
 }
 
 section {
@@ -47,4 +53,6 @@ section {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
+
 }
