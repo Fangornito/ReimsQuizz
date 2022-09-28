@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
     <section>
-                <img class="main-logo" src="logo-temporaire.png" alt="logo burger">
-                <button class="play-button" type="button">JOUER</button>
+        <img class="main-logo" src="logo-temporaire.png" alt="logo burger">
+        <button class="play-button" type="button">JOUER</button>
     </section>
 
     <section class="pagedeux">
@@ -18,190 +20,17 @@
                 <h1>Ici c'est la question</h1>
             </div>
             <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>               
-            </div>
-            <div class= "number" >
-                <p> Question n°1</p>
-            </div>
-            <div class="questions">
-                <h1>Ici c'est la question</h1>
-            </div>
-            <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>              
-            </div>
-            <div class= "number" >
-                <p> Question n°2</p>
-            </div>
-            <div class="questions">
-                <h1>Ici c'est la question</h1>
-            </div>
-            <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>            
-            </div>
-            <div class= "number" >
-                <p> Question n°3</p>
-            </div>
-            <div class="questions">
-                <h1>Ici c'est la question</h1>
-            </div>
-            <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>              
-            </div>
-            <div class= "number" >
-                <p> Question n°4</p>
-            </div>
-            <div class="questions">
-                <h1>Ici c'est la question</h1>
-            </div>
-            <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class= "number" >
-                <p> Question n°3</p>
-            </div>
-            <div class="questions">
-                <h1>Ici c'est la question</h1>
-            </div>
-            <div class="answers">
-                <ul>
-                    <li>
-                        <button>
-                            Bouton reponse1
-                        </button>
-                    </li>
-               
-                    <li>
-                        <button>
-                            Bouton reponse2
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button>
-                            Bouton reponse3
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Bouton reponse4
-                        </button>
-                    </li>
-                </ul>
+                <form oninput="result.value=parseInt(drone.value)">
+                    <input type="radio" id="reponse1" name="drone" value=0>
+                    <label for="reponse1"> REPONSE 1 </label>
+                    <input type="radio" id="reponse2" name="drone" value=10>
+                    <label for="reponse2"> REPONSE 2 </label>
+                    <input type="radio" id="reponse3" name="drone" value=0>
+                    <label for="reponse3"> REPONSE 3 </label>
+                    <input type="radio" id="reponse4" name="drone" value=0>
+                    <label for="reponse4"> REPONSE 4 </label>
+                    <output name="result"> 0 </output>
+                </form>
             </div>
         </div>
     </section>
@@ -217,4 +46,5 @@
     </section>
     <script src="src/script.js"></script>
 </body>
+
 </html>

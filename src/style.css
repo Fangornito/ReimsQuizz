@@ -1,79 +1,80 @@
-*{
-    margin:0; /*positioner la marge à 0*/
-    padding: 0; /*positionner le bord à 0*/
-    --main-color: #C31DA8; /*couleur du background*/
-    /*--font-play:*/
-    --main-font-text:"First School"; /*Police d'écriture global du site*/
-    --size-text:8px; /*Taille général des textes*/
-    --size-play:2rem; /*Taille du texte des bouttons*/
-}
+body {
+    padding: 1rem;
+    color: hsla(215, 5%, 50%, 1);
+  }
+  h1 {
+    color: hsla(215, 5%, 10%, 1);
+    margin-bottom: 2rem;
+  }
+  section {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section > div {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  input[type="radio"] {
+    display: none;}
+    &:not(:disabled) ~ label {
+      cursor: pointer;
+    }
+    &:disabled ~ label {
+      color: hsla(150, 5%, 75%, 1);
+      border-color: hsla(150, 5%, 75%, 1);
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  
 
-
-body{
-    background-color: var(--main-color);
-}
-
-.main-logo{
-    display:block;
-    margin:auto;
-    width:33rem;
-    margin-top:1rem;
-}
-section {
-    margin-top: -1rem;
-}
-.play-button{
-    width:20rem;
+  label { /* caractéristiques des labels*/
+    height: 100%;
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: var(--size-play);
-    padding: 2rem;
-    border-radius:20px;
-    background-color: blueviolet;
-    text-decoration: white;
-}
-
-.pagedeux {
-    padding: 0.5rem;
-    margin: 0 auto;
-    max-width: 65ch;
-  }
-  
-.answers > ul > li {
-    display: inline-block;
-    width: 40%;
-    padding: 0.5rem;
-    margin: 0 0.5rem 1rem;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: -2px 5px 10px rgb(0 0 0 / 20%);
+    background: none;/*prend la couleur du background*/
+    border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
+    border-radius: 20px; /*Arrondis les coins des labels*/
+    padding: 1rem;  
+    margin-bottom: 1rem;
+    margin: 1rem;
     text-align: center;
+    position: relative;
   }
+  input[type="radio"]#reponse2:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+  
+  input[type="radio"]#reponse4:checked + label {
 
-  button {
-    border: none;
-    padding: 15%;
-    font-size: 18px;
-    font-style: bolder;
-    
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse1:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  input[type="radio"]#reponse3:checked + label {
+    background: red;
+    border-color:rgb(129, 2, 2);
+    color: white;
+    font-weight: bold;
+  }
+  p {
+    font-weight: 900;
   }
   
-  .questions {
-    display: inline;
-    padding: 5%;
-  }
   
-  .questions h2,
-  .enoncequestion {
-    grid-column: 1 / -1;
+  @media only screen and (max-width: 700px) {
+    section {
+      flex-direction: column;
+    }
   }
-  
-  ul {
-    list-style-type: none;
-  }
-  .questions {
-    text-align: center;
-  }
-
-  
