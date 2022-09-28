@@ -5,7 +5,7 @@
     /*--font-play:*/
     --main-font-text:"First School"; /*Police d'écriture global du site*/
     --size-text:8px; /*Taille général des textes*/
-    --size-play:24px; /*Taille du texte des bouttons*/
+    --size-play:2rem; /*Taille du texte des bouttons*/
 }
 
 
@@ -13,50 +13,67 @@ body{
     background-color: var(--main-color);
 }
 
-.logo {
-    display:flex;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
+.main-logo{
+    display:block;
+    margin:auto;
+    width:33rem;
+    margin-top:1rem;
 }
 section {
-  padding: 0.5rem;
-  margin: 0 auto;
-  max-width: 65ch;
+    margin-top: -1rem;
+}
+.play-button{
+    width:20rem;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: var(--size-play);
+    padding: 2rem;
+    border-radius:20px;
+    background-color: blueviolet;
+    text-decoration: white;
 }
 
-section > article {
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 0 0.5rem 1rem;
-  border-radius: 30px;
-  background-color: #fff;
-  box-shadow: -2px 5px 10px rgb(0 0 0 / 20%);
-}
-
-.Questions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.Questions h2,
-.enoncequestion {
-  grid-column: 1 / -1;
-}
-
-.button{
-    background-color: white;
-    border-radius: 45px;
-    margin-left: 15%;
-    margin-top: 5%;
-    padding: 5px;
-    border: none;
-    color: black;
-    text-align: center;
+.pagedeux {
+    padding: 0.5rem;
+    margin: 0 auto;
+    max-width: 65ch;
+  }
+  
+.answers > ul > li {
     display: inline-block;
-    font-size: 14px;
-    font-weight: bolder;
-}
+    width: 40%;
+    padding: 0.5rem;
+    margin: 0 0.5rem 1rem;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: -2px 5px 10px rgb(0 0 0 / 20%);
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    padding: 15%;
+    font-size: 18px;
+    font-style: bolder;
+    
+  }
+  
+  .questions {
+    display: inline;
+    padding: 5%;
+  }
+  
+  .questions h2,
+  .enoncequestion {
+    grid-column: 1 / -1;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  .questions {
+    text-align: center;
+  }
+
+  
