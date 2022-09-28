@@ -5,10 +5,30 @@
     /*--font-play:*/
     --main-font-text:"First School"; /*Police d'écriture global du site*/
     --size-text:8px; /*Taille général des textes*/
-    --size-play:24px; /*Taille du texte des bouttons*/
+    --size-play:2rem; /*Taille du texte des bouttons*/
 }
 
 
 body{
     background-color: var(--main-color);
 }
+
+.main-logo{
+    display:block;
+    margin:auto;
+    width:33rem;
+    margin-top:1rem;
+}
+
+.play-button{
+    width:20rem;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: var(--size-play);
+    padding: 2rem;
+    border-radius:20px;
+    background-color: blueviolet;
+    text-decoration: white;
+}
+
