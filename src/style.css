@@ -1,0 +1,62 @@
+*{
+    margin:0; /*positioner la marge à 0*/
+    padding: 0; /*positionner le bord à 0*/
+    --main-color: #C31DA8; /*couleur du background*/
+    /*--font-play:*/
+    --main-font-text:"First School"; /*Police d'écriture global du site*/
+    --size-text:8px; /*Taille général des textes*/
+    --size-play:24px; /*Taille du texte des bouttons*/
+}
+
+
+body{
+    background-color: var(--main-color);
+}
+
+.logo {
+    display:flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+section {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 65ch;
+}
+
+section > article {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: -2px 5px 10px rgb(0 0 0 / 20%);
+}
+
+.Questions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Questions h2,
+.enoncequestion {
+  grid-column: 1 / -1;
+}
+
+.button{
+    background-color: white;
+    border-radius: 45px;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 5px;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+}
