@@ -12,29 +12,37 @@
     /*Taille général des textes*/
     --size-play: 2rem;
     /*Taille du texte des bouttons*/
+    box-sizing: border-box;
 }
 
 
 body {
     background-color: var(--main-color);
+    max-width: 800px;
+    margin: auto;
 }
 
 .main-logo {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
-
+    max-width: 100%;
 }
 
 .play-button {
-    width: 20rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     font-size: var(--size-play);
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: 20px;
     background-color: blueviolet;
     text-decoration: white;
+    align-self: stretch;
+    text-align: center;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
