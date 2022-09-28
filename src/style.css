@@ -32,12 +32,14 @@ body {
 
 .play-button {
     font-size: var(--size-play);
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 20px;
     background-color: blueviolet;
-    text-decoration: white;
     align-self: stretch;
     text-align: center;
+    text-decoration: None;
+    margin-top:7rem;
+    color:white;
 }
 
 section {
