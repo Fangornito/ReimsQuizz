@@ -1,34 +1,48 @@
-*{
-    margin:0; /*positioner la marge à 0*/
-    padding: 0; /*positionner le bord à 0*/
-    --main-color: #C31DA8; /*couleur du background*/
+* {
+    margin: 0;
+    /*positioner la marge à 0*/
+    padding: 0;
+    /*positionner le bord à 0*/
+    --main-color: #C31DA8;
+    /*couleur du background*/
     /*--font-play:*/
-    --main-font-text:"First School"; /*Police d'écriture global du site*/
-    --size-text:8px; /*Taille général des textes*/
-    --size-play:2rem; /*Taille du texte des bouttons*/
+    --main-font-text: "First School";
+    /*Police d'écriture global du site*/
+    --size-text: 8px;
+    /*Taille général des textes*/
+    --size-play: 2rem;
+    /*Taille du texte des bouttons*/
+    box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: var(--main-color);
+    max-width: 800px;
+    margin: auto;
 }
 
-.main-logo{
-    display:block;
-    margin:auto;
-    width:33rem;
-    margin-top:1rem;
+.main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    max-width: 100%;
 }
 
-.play-button{
-    width:20rem;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
+.play-button {
     font-size: var(--size-play);
-    padding: 2rem;
-    border-radius:20px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
     background-color: blueviolet;
     text-decoration: white;
+    align-self: stretch;
+    text-align: center;
 }
 
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
