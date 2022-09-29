@@ -18,11 +18,13 @@
 
 label { /* caractéristiques des labels*/
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: none;/*prend la couleur du background*/
   border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
   border-radius: 20px; /*Arrondis les coins des labels*/
-  padding: 1rem;  
+  padding: 3.5rem;  
   margin-bottom: 1rem;
   margin: 1rem;
   text-align: center;
@@ -204,6 +206,20 @@ input[type="radio"]#reponse16:checked + label {
 /* Séparation : en haut css de la question 4 */
 p {
   font-weight: 900;
+}
+
+/* Made h1&h2 changes*/
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2.5rem;
+
 }
 
 
