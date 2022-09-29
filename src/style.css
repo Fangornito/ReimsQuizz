@@ -56,6 +56,9 @@ section {
     background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
 
 }
+#delete{
+    display:none;
+}
  section > div {
     flex: 1;
     padding: 0.5rem;
