@@ -16,42 +16,45 @@
     
     <section id="pagedeux">
         <div class="corps">
-                <form oninput="result.value=parseInt(drone.value)">
-                    <div class="segment">
-                        <h1>Question 1</h1>
+                <form oninput="result.value=parseInt(drone.value)+ parseInt(drone2.value)+ parseInt(drone3).value">
+                    <div class="segment" id="page1">
+                        <h1>Ici c'est la question 1 </h1>
                             <input type="radio" id="reponse1" name="drone" value=0>
                             <label for="reponse1"> REPONSE 1 </label>
                             <input type="radio" id="reponse2" name="drone" value=10>
-                            <label for="reponse2"> REPONSE 2 </label>
+                            <label for="reponse2"><a href="#page2">REPONSE 2</a> </label>
                             <input type="radio" id="reponse3" name="drone" value=0>
                             <label for="reponse3"> REPONSE 3 </label>
                             <input type="radio" id="reponse4" name="drone" value=0>
                             <label for="reponse4"> REPONSE 4 </label>
+			<h2>Question n°1</h2>
                     </div>
-                    <div class="segment">
-                        <h1>Question 2</h1>
+                    <div class="segment" id="page2">
+                        <h1>Ici c'est la question 2</h1>
                             <input type="radio" id="reponse5" name="drone1" value=0>
                             <label for="reponse5"> REPONSE 5 </label>
                             <input type="radio" id="reponse6" name="drone1" value=10>
-                            <label for="reponse6"> REPONSE 6 </label>
+                            <label for="reponse6"><a href="#page3">REPONSE 6</a> </label>
                             <input type="radio" id="reponse7" name="drone1" value=0>
                             <label for="reponse7"> REPONSE 7 </label>
                             <input type="radio" id="reponse8" name="drone1" value=0>
                             <label for="reponse8"> REPONSE 8 </label>
+			<h2>Question n°2</h2>
                     </div>
-                    <div class="segment">
-                        <h1>Question 3</h1>
+                    <div class="segment" id="page3">
+                        <h1>Ici c'est la question 3</h1>
                             <input type="radio" id="reponse9" name="drone2" value=0>
                             <label for="reponse9"> REPONSE 9 </label>
                             <input type="radio" id="reponse10" name="drone2" value=10>
-                            <label for="reponse10"> REPONSE 10 </label>
+                            <label for="reponse10"><a href="#page4">REPONSE 10</a></label>
                             <input type="radio" id="reponse11" name="drone2" value=0>
                             <label for="reponse11"> REPONSE 11 </label>
                             <input type="radio" id="reponse12" name="drone2" value=0>
                             <label for="reponse12"> REPONSE 12 </label>
+			<h2>Question n°3</h2>
                     </div>
-                    <div class="segment">
-                        <h1>Question 4</h1>
+                    <div class="segment" id="page4">
+                        <h1>Ici c'est la question 4</h1>
                             <input type="radio" id="reponse13" name="drone3" value=0>
                             <label for="reponse13"> REPONSE 13 </label>
                             <input type="radio" id="reponse14" name="drone3" value=10>
@@ -60,8 +63,8 @@
                             <label for="reponse15"> REPONSE 15 </label>
                             <input type="radio" id="reponse16" name="drone3" value=0>
                             <label for="reponse16"> REPONSE 16 </label>
+			<h2>Question n°4</h2>
                     </div>
-                
         </div>
     <section class="segment">
         <h1>Résultat</h1>
