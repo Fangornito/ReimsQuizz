@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
     <title>ReimsQuizz</title>
 </head>
+
 <body>
     <section>
 	<h1 id="delete">Bienvenue</h1>
@@ -21,9 +23,7 @@
                 <h1>Question</h1>
             </div>
             <div class="answers">
-                
                 <form oninput="result.value=parseInt(drone.value)+parseInt(drone1.value)+parseInt(drone2.value)+parseInt(drone3.value)">
-
                     <input type="radio" id="reponse1" name="drone" value=0>
                     <label for="reponse1"> REPONSE 1 </label>
                     <input type="radio" id="reponse2" name="drone" value=10>
@@ -60,7 +60,6 @@
                     <input type="radio" id="reponse16" name="drone3" value=0>
                     <label for="reponse16"> REPONSE 16 </label>
                     <h1>Résultat</h1>
-
                   <output name="result"> 0</output>
 
 
@@ -69,4 +68,5 @@
     </section>
     <script src="src/script.js"></script>
 </body>
+
 </html>

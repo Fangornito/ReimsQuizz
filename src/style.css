@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   /*positioner la marge à 0*/
@@ -71,16 +72,27 @@ input[type="radio"] {
     border-color: hsla(150, 5%, 75%, 1);
     box-shadow: none;
     cursor: not-allowed;
+  }
 #delete{
     display:none;
 }
  section > div {
     flex: 1;
     padding: 0.5rem;
+
   }
-
-
-label { /* caractéristiques des labels*/
+  input[type="radio"]#reponse2:checked + label {
+    /*Colore le label 2 et change la couleur du texte à l'intérieur */
+    background: hsla(150, 75%, 50%, 1);
+    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+    border-color: green;
+    }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+      font-weight: bold;
+    }
+  
+  input[type="radio"]#reponse4:checked + label {
+/* caractéristiques des labels*/
   height: 100%;
   display: block;
   background: none;/*prend la couleur du background*/
@@ -93,6 +105,7 @@ label { /* caractéristiques des labels*/
   position: relative;
   color:white;
 }
+  
 input[type="radio"]#reponse2:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
@@ -214,3 +227,4 @@ p {
     flex-direction: column;
   }
 }
+
