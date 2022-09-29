@@ -56,6 +56,7 @@ section {
   background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
 
 }
+
 section > div {
   flex: 1;
   padding: 0.5rem;
@@ -70,6 +71,12 @@ input[type="radio"] {
     border-color: hsla(150, 5%, 75%, 1);
     box-shadow: none;
     cursor: not-allowed;
+#delete{
+    display:none;
+}
+ section > div {
+    flex: 1;
+    padding: 0.5rem;
   }
 
 
