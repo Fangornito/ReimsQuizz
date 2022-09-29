@@ -1,223 +1,216 @@
+
 * {
-    margin: 0;
-    /*positioner la marge à 0*/
-    padding: 0;
-    /*positionner le bord à 0*/
-    --main-color: #C31DA8;
-    /*couleur du background*/
-    /*--font-play:*/
-    --main-font-text: "First School";
-    /*Police d'écriture global du site*/
-    --size-text: 8px;
-    /*Taille général des textes*/
-    --size-play: 2rem;
-    /*Taille du texte des bouttons*/
-    box-sizing: border-box;
+  margin: 0;
+  /*positioner la marge à 0*/
+  padding: 0;
+  /*positionner le bord à 0*/
+  --main-color: #C31DA8;
+  /*couleur du background*/
+  /*--font-play:*/
+  --main-font-text: "First School";
+  /*Police d'écriture global du site*/
+  --size-text: 8px;
+  /*Taille général des textes*/
+  --size-play: 2rem;
+  /*Taille du texte des bouttons*/
+  box-sizing: border-box;
 }
 
-
+label { /* caractéristiques des labels*/
+  height: 100%;
+  display: block;
+  background: none;/*prend la couleur du background*/
+  border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
+  border-radius: 20px; /*Arrondis les coins des labels*/
+  padding: 1rem;  
+  margin-bottom: 1rem;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+  color:white;
+}
 body {
 
-    max-width: 800px;
-    margin: auto;
-    background-size: 844px;
-    background-repeat: no-repeat;
+  max-width: 800px;
+  margin: auto;
+  background-size: 844px;
+  background-repeat: no-repeat;
 }
 
 
 .main-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  max-width: 100%;
 }
 
 .play-button {
-    font-size: var(--size-play);
-    padding: 2rem 2rem;
-    border-radius: 15px;
-    background-color: rgb(251, 251, 251);
-    align-self: stretch;
-    text-align: center;
-    margin-top: 7rem;
-    border-width: 5px;
-    text-decoration: none;
-    box-shadow: 0px 8px #30024F;
-    color:#30024F;
-    font-family: "Berlin",sans-serif;
+  font-size: var(--size-play);
+  padding: 2rem 2rem;
+  border-radius: 15px;
+  background-color: rgb(251, 251, 251);
+  align-self: stretch;
+  text-align: center;
+  margin-top: 7rem;
+  border-width: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px #30024F;
+  color:#30024F;
+  font-family: "Berlin",sans-serif;
+}
+.segment {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
+}
+section > div {
+  flex: 1;
+  padding: 0.5rem;
+
+}
+#delete {
+  display:none;
 }
 
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
-
-}
-#delete{
-    display:none;
-}
- section > div {
-    flex: 1;
-    padding: 0.5rem;
+input[type="radio"] {
+  display: none;}
+  &:not(:disabled) ~ label {
+    cursor: pointer;
   }
-  input[type="radio"] {
-    display: none;}
-    &:not(:disabled) ~ label {
-      cursor: pointer;
-    }
-    &:disabled ~ label {
-      color: hsla(150, 5%, 75%, 1);
-      border-color: hsla(150, 5%, 75%, 1);
-      box-shadow: none;
-      cursor: not-allowed;
-    }
+  &:disabled ~ label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, 1);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+
+ 
   
-
-  label { /* caractéristiques des labels*/
-    height: 100%;
-    display: block;
-    background: none;/*prend la couleur du background*/
-    border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
-    border-radius: 20px; /*Arrondis les coins des labels*/
-    padding: 1rem;  
-    margin-bottom: 1rem;
-    margin: 1rem;
-    text-align: center;
-    position: relative;
-    color:white;
-  }
-  input[type="radio"]#reponse2:checked + label {
-    /*Colore le label 2 et change la couleur du texte à l'intérieur */
-    background: hsla(150, 75%, 50%, 1);
-    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
-    border-color: green;
-    }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-      font-weight: bold;
-    }
   
-  input[type="radio"]#reponse4:checked + label {
-
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
+input[type="radio"]#reponse2:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
+}
+  &::after {/*s'effectue après la modification du label, sur l'input radio*/
     font-weight: bold;
   }
-  input[type="radio"]#reponse1:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
+input[type="radio"]#reponse6:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
   }
-  input[type="radio"]#reponse3:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-/* séparation : en haut css de la question 1 */
-
-
-  input[type="radio"]#reponse7:checked + label {
-    /*Colore le label 2 et change la couleur du texte à l'intérieur */
-    background: hsla(150, 75%, 50%, 1);
-    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
-    border-color: green;
-    }
     &::after {/*s'effectue après la modification du label, sur l'input radio*/
-      font-weight: bold;
-    }
-
-  input[type="radio"]#reponse6:checked + label {
-
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
     font-weight: bold;
   }
-  input[type="radio"]#reponse5:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
+input[type="radio"]#reponse10:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
   }
-  input[type="radio"]#reponse8:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-/* séparation : en haut css de la question 2 */
-  input[type="radio"]#reponse12:checked + label {
-    /*Colore le label 2 et change la couleur du texte à l'intérieur */
-    background: hsla(150, 75%, 50%, 1);
-    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
-    border-color: green;
-    }
     &::after {/*s'effectue après la modification du label, sur l'input radio*/
-      font-weight: bold;
+    font-weight: bold;
     }
-
-  input[type="radio"]#reponse10:checked + label {
-
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
+input[type="radio"]#reponse14:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */ 
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
   }
-  input[type="radio"]#reponse11:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-  input[type="radio"]#reponse9:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-/* Séparation : en haut css de la question 3 */
-  input[type="radio"]#reponse15:checked + label {
-    /*Colore le label 2 et change la couleur du texte à l'intérieur */
-    background: hsla(150, 75%, 50%, 1);
-    color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
-    border-color: green;
-    }
     &::after {/*s'effectue après la modification du label, sur l'input radio*/
-      font-weight: bold;
-    }
+    font-weight: bold;
+  }
+input[type="radio"]#reponse1:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse3:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse4:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse5:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse7:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse8:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse9:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse11:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse12:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse13:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse15:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse16:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
 
-  input[type="radio"]#reponse14:checked + label {
-
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-  input[type="radio"]#reponse13:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
-  input[type="radio"]#reponse16:checked + label {
-    background: red;
-    border-color:rgb(129, 2, 2);
-    color: white;
-    font-weight: bold;
-  }
 /* Séparation : en haut css de la question 4 */
-  p {
-    font-weight: 900;
+p {
+  font-weight: 900;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  section {
+    flex-direction: column;
   }
-  
-  
-  @media only screen and (max-width: 700px) {
-    section {
-      flex-direction: column;
-    }
-  }
+}
+
