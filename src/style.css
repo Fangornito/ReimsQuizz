@@ -16,19 +16,31 @@
   box-sizing: border-box;
 }
 
-label { /* caractéristiques des labels*/
+label { 
   height: 100%;
-  display: block;
-  background: none;/*prend la couleur du background*/
-  border: 2px solid rgb(223, 172, 32);/*bordure du label avant le click*/
-  border-radius: 20px; /*Arrondis les coins des labels*/
-  padding: 1rem;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  border-radius: 15px;
+  padding: 2.5rem;  
   margin-bottom: 1rem;
   margin: 1rem;
   text-align: center;
   position: relative;
-  color:white;
+  color:#30024F;
+  font-size:25px;
+  border-width: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px #30024F;
+  color:#30024F;
+  font-family: "Berlin",sans-serif;
 }
+
+.corps{
+  padding:0;
+}
+
 body {
 
   max-width: 800px;
@@ -58,7 +70,7 @@ body {
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
   color:#30024F;
-  font-family: "Berlin",sans-serif;
+  font-family: "Wicked Mouse";
 }
 .segment {
   min-height: 100vh;
@@ -72,6 +84,22 @@ section > div {
   padding: 0.5rem;
 
 }
+
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--main-font-text);
+  margin-top: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+  color:white;
+}
+
 #delete {
   display:none;
 }
