@@ -23,7 +23,7 @@ label {
   align-items: center;
   background-color:white;
   border-radius: 15px;
-  padding: 2.5rem;  
+  padding: 1.8rem;  
   margin-bottom: 1rem;
   margin: 1rem;
   text-align: center;
@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 5rem;
   max-width: 100%;
 }
 
@@ -70,12 +70,33 @@ body {
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
   color:#30024F;
-  font-family: "Wicked Mouse";
+  font-family: "Wicked Mouse";  
+  margin-bottom: 8rem;
 }
+
+.valid-button{
+  font-size: 25px;
+  padding: 1.5rem 1.5rem;
+  margin-top:1rem;
+  background-color: #ffffff;
+opacity: 1;
+background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
+  align-self: stretch;
+  text-align: center;
+  border-width: 5px;
+  text-decoration: none;
+  box-shadow: 0px 8px #30024F;
+  color:#30024F;
+  font-family: "Wicked Mouse";
+  text-shadow: 2px 3px white;
+
+}
+
 .segment {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
   background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
 }
@@ -91,13 +112,17 @@ h1 {
   padding-bottom: 2rem;
   font-family: var(--main-font-text);
   margin-top: 1.5rem;
+  color:white;
+  text-shadow: 2px 3px #30024F;
 }
 
 h2 {
   text-align: center;
   font-size: 1.5rem;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   color:white;
+  font-family: "Gill Sans", sans-serif;
+
 }
 
 #delete {
