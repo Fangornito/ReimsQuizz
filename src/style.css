@@ -16,6 +16,19 @@
   box-sizing: border-box;
 }
 
+#playername{
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: "Wicked Mouse"; 
+  text-align: center;
+  box-shadow: 0px 5px #30024F;
+}
+#playerchamp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 label { 
   height: 100%;
   display: flex;
@@ -65,7 +78,6 @@ body {
   background-color: rgb(251, 251, 251);
   align-self: stretch;
   text-align: center;
-  margin-top: 7rem;
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
@@ -259,7 +271,24 @@ p {
   font-weight: 900;
 }
 
+.score {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10rem;
+  margin-bottom: 20rem;
+  border: solid;
+  border-color: white;
+  color: white;
+  border-radius: 30px;
+  border-width: 10px;
+}
 
+.titlelastpage {
+  text-align: center;
+  font-size: 5rem;
+}
 
 @media only screen and (max-width: 700px) {
   section {
