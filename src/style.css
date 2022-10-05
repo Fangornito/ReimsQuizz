@@ -60,6 +60,7 @@ body {
   margin: auto;
   background-size: 844px;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 
@@ -142,6 +143,49 @@ h2 {
   display: none;
 }
 
+#page5 {
+  position: relative;
+
+}
+
+#page5 span {
+  position: absolute;
+  bottom: 0%;
+
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: inset 0 0 10px rgb(242, 156, 194);
+  animation: animate 4s linear infinite;
+
+}
+
+#page5 span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.25) translate(-70%, -70%);
+  background: radial-gradient(rgb(217, 107, 239), transparent);
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-2000%);
+    opacity: 1;
+  }
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -156,10 +200,6 @@ input[type="radio"] {
   box-shadow: none;
   cursor: not-allowed;
 }
-
-
-
-
 
 input[type="radio"]#reponse2:checked+label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
@@ -217,84 +257,84 @@ input[type="radio"]#reponse1:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse3:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse4:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse5:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse7:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse8:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse9:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse11:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse12:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse13:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse15:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 input[type="radio"]#reponse16:checked+label {
   background: red;
   border-color: rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+  ;
 }
 
 /* Séparation : en haut css de la question 4 */
@@ -334,20 +374,79 @@ p {
   display: block;
   border: 2px solid white;
   border-radius: 30px;
-}
 
-.w3-bar {
-  border-radius: 30px;
-  display: flex;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-  background-color: cyan;
-}
-
-
-@media only screen and (max-width: 700px) {
-  section {
-    flex-direction: column;
+  .desktopnav {
+    display: none;
   }
+
+  @media (min-width:1025px) {
+    * {
+      margin: 0;
+      /*positioner la marge à 0*/
+      padding: 0;
+      /*positionner le bord à 0*/
+      --main-color: #C31DA8;
+      /*couleur du background*/
+      /*--font-play:*/
+      --main-font-text: "First School";
+      /*Police d'écriture global du site*/
+      --size-text: 8px;
+      /*Taille général des textes*/
+      --size-play: 2rem;
+      /*Taille du texte des bouttons*/
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 100%;
+    }
+  }
+
+  .reponse {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-gap: 1rem;
+    padding: 0;
+  }
+
+  .segment {
+    align-items: center;
+  }
+
+  .segment>a {
+    border-radius: 10px;
+  }
+
+  .segment>h1 {
+    text-align: center;
+  }
+
+  .mobilequestion {
+    display: none;
+  }
+
+  .desktopnav {
+    background-color: #30024F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .desktopnav>h2 {
+    padding: 0;
+  }
+
+  .desktopnav>img {
+    width: 10%;
+    height: 20%;
+  }
+
+  #playerid {
+    margin-right: 60%;
+  }
+
 }
