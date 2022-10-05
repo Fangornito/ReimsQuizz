@@ -181,15 +181,121 @@ h2 {
   }
 }
 
-.response.good:checked + label {
+input[type="radio"] {
+  display: none;}
+  &:not(:disabled) ~ label {
+    cursor: pointer;
+  }
+  &:disabled ~ label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, 1);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+input[type="radio"]#reponse2:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
   color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
   border-color: green;
+}
+  &::after {/*s'effectue après la modification du label, sur l'input radio*/
+    font-weight: bold;
+  }
+input[type="radio"]#reponse6:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
+  }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+    font-weight: bold;
+  }
+input[type="radio"]#reponse10:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
+  }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+    font-weight: bold;
+    }
+input[type="radio"]#reponse14:checked + label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */ 
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  border-color: green;
+  }
+    &::after {/*s'effectue après la modification du label, sur l'input radio*/
+    font-weight: bold;
+  }
+input[type="radio"]#reponse1:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
   font-weight: bold;
 }
-
-.response.bad:checked + label {
+input[type="radio"]#reponse3:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse4:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse5:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse7:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse8:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse9:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse11:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse12:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse13:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse15:checked + label {
+  background: red;
+  border-color:rgb(129, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+input[type="radio"]#reponse16:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
@@ -244,6 +350,7 @@ p {
   }
 
   .reponse{
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
@@ -280,5 +387,5 @@ p {
 #playerid {
   margin-right : 60%;
 }
-  
+
   }
