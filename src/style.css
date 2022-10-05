@@ -153,9 +153,47 @@ input[type="radio"] {
     cursor: not-allowed;
   }
 
-
- 
+#page5 {
+  position:relative;
   
+}
+  #page5 span {
+    position: absolute;
+    bottom: 0%;
+  
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgb(242, 156, 194);
+    animation: animate 4s linear infinite;
+
+}
+#page5 span:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.25) translate(-70%, -70%);
+  background: radial-gradient(rgb(217, 107, 239), transparent);
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0%
+  {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+  99%
+  {
+      opacity: 1;
+  }
+  100%
+  {
+      transform: translateY(-2000%);
+      opacity: 1;
+  }
+}
   
 input[type="radio"]#reponse2:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
