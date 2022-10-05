@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Wicked Mouse;
+  src: local("Wicked Mouse"),
+       local("Wicked Mouse"),
+       url(Wicked\ Mouse\ Demo.otf);
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: local("Cocogoose"),
+       local("Cocogoose"),
+       url(Cocogoose\ Pro-trial.ttf);
+}
+
+
 * {
   margin: 0;
   /*positioner la marge à 0*/
@@ -6,7 +21,7 @@
   --main-color: #C31DA8;
   /*couleur du background*/
   /*--font-play:*/
-  --main-font-text: "First School";
+  --main-font-text: "Cocogoose";
   /*Police d'écriture global du site*/
   --size-text: 8px;
   /*Taille général des textes*/
@@ -30,23 +45,39 @@
 
 label { 
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color:white;
   border-radius: 15px;
   padding: 1.8rem;  
   margin-bottom: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   text-align: center;
   position: relative;
   color:#30024F;
-  font-size:25px;
+  font-size:min(2.5vh, 1rem);
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
   color:#30024F;
-  font-family: "Berlin",sans-serif;
+  font-family: var(--main-font-text);
+}
+
+.w3-border {
+  display: block;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-top:1rem;
+}
+
+.w3-bar {
+  border-radius: 30px;
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0d7ff;
+  font-family: Wicked Mouse;
 }
 
 .corps{
@@ -78,6 +109,7 @@ body {
   background-color: rgb(251, 251, 251);
   align-self: stretch;
   text-align: center;
+  margin-top: 7rem;
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
@@ -87,8 +119,8 @@ body {
 }
 
 .valid-button{
-  font-size: 25px;
-  padding: 1.5rem 6rem;
+  font-size: min(3vh, 1.5rem);
+  padding: 1.2rem 1.2rem;
   margin-top:1rem;
   background-color: #ffffff;
   opacity: 1;
@@ -119,8 +151,8 @@ section > div {
 
 h1 {
   text-align: left;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: min(3vh, 1.5rem);
+  padding-bottom: 0.7rem;
   font-family: var(--main-font-text);
   margin-top: 1.5rem;
   color:white;
@@ -132,8 +164,7 @@ h2 {
   font-size: 1.5rem;
   padding-top: 2rem;
   color:white;
-  font-family: "Gill Sans", sans-serif;
-
+  font-family: var(--main-font-text);
 }
 
 #delete {
@@ -194,6 +225,7 @@ input[type="radio"] {
     cursor: not-allowed;
   }
 
+  
 input[type="radio"]#reponse2:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
