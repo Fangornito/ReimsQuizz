@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <section class="segment">
+    <section class="segment" id="pageun">
         <h1 id="delete">Bienvenue</h1>
         <img class="main-logo" src="logo-temporaire.png" alt="logo burger">
-        <form id="playerchamp"action="">
+        <form id="playerchamp" action="">
             <input id="playername" type="text" placeholder="Nom du joueur" name="joueur">
         </form>
         <a href="#pagedeux" class="play-button">JOUER</a>
@@ -37,7 +37,7 @@
                     <a class="valid-button" href="#page2">Valider</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:8%;color:black">0%</div>
-                      </div> 
+                    </div>
                 </div>
 
                 <div class="segment" id="page2">
@@ -53,7 +53,7 @@
                     <a class="valid-button" href="#page3">Valider</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:25%;color:black">25%</div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="segment" id="page3">
                     <h1>Quel quartier ne se trouve pas a Reims ?</h1>
@@ -68,7 +68,7 @@
                     <a class="valid-button" href="#page4">Valider</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:50%;color:black">50%</div>
-                      </div>
+                    </div>
                 </div>
                 <div class="segment" id="page4">
                     <h1>Quel est le terminus de la ligne A du tramway remois ?</h1>
@@ -81,24 +81,27 @@
                     <input type="radio" id="reponse16" name="drone3" value=0>
                     <label for="reponse16">Bezannes</label>
                     <a class="valid-button" href="#page5">Valider</a>
-                    
+
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:75%;color:black">75%</div>
-                      </div>
+                    </div>
                 </div>
                 <div class="segment" id="page5">
-                    
-                    
-                   
-                    <h1 class="titlelastpage">Resultat</h1>
+
+
+                    <img classe="lastimg" src="logo-temporaire.png" alt="logo-reims-quiz">
+                    <h2 class="textlastpage"> </h2>
                     <output class="score" name="result"> 0 </output>
-                    <div class="w3-border">
+                    <a href="#pageun" class="play-button">REJOUER</a>
+                    <!--commentaire > <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:100%;color:black">100% !</div>
-                      </div>
+                        <!-->
                 </div>
-            </form>
+        </div>
+        </form>
         </div>
         <script src="src/script.js"></script>
     </section>
 </body>
+
 </html>

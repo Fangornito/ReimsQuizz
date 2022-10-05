@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   /*positioner la marge à 0*/
@@ -16,42 +15,43 @@
   box-sizing: border-box;
 }
 
-#playername{
+#playername {
   padding: 1rem;
   border-radius: 15px;
-  font-family: "Wicked Mouse"; 
+  font-family: "Wicked Mouse";
   text-align: center;
   box-shadow: 0px 5px #30024F;
 }
-#playerchamp{
+
+#playerchamp {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-label { 
+label {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:white;
+  background-color: white;
   border-radius: 15px;
-  padding: 1.8rem;  
+  padding: 1.8rem;
   margin-bottom: 1rem;
   margin: 1rem;
   text-align: center;
   position: relative;
-  color:#30024F;
-  font-size:25px;
+  color: #30024F;
+  font-size: 25px;
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
-  color:#30024F;
-  font-family: "Berlin",sans-serif;
+  color: #30024F;
+  font-family: "Berlin", sans-serif;
 }
 
-.corps{
-  padding:0;
+.corps {
+  padding: 0;
 }
 
 body {
@@ -81,24 +81,24 @@ body {
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
-  color:#30024F;
-  font-family: "Wicked Mouse";  
+  color: #30024F;
+  font-family: "Wicked Mouse";
   margin-bottom: 8rem;
 }
 
-.valid-button{
+.valid-button {
   font-size: 25px;
   padding: 1.5rem 1.5rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   background-color: #ffffff;
-opacity: 1;
-background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
+  opacity: 1;
+  background: repeating-linear-gradient(45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px);
   align-self: stretch;
   text-align: center;
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
-  color:#30024F;
+  color: #30024F;
   font-family: "Wicked Mouse";
   text-shadow: 2px 3px white;
 
@@ -112,7 +112,8 @@ background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px,
   padding: 1rem;
   background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
 }
-section > div {
+
+section>div {
   flex: 1;
   padding: 0.5rem;
 
@@ -124,144 +125,174 @@ h1 {
   padding-bottom: 2rem;
   font-family: var(--main-font-text);
   margin-top: 1.5rem;
-  color:white;
+  color: white;
   text-shadow: 2px 3px #30024F;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-top: 2rem;
-  color:white;
+  color: white;
   font-family: "Gill Sans", sans-serif;
 
 }
 
 #delete {
-  display:none;
+  display: none;
 }
 
 input[type="radio"] {
-  display: none;}
-  &:not(:disabled) ~ label {
-    cursor: pointer;
-  }
-  &:disabled ~ label {
-    color: hsla(150, 5%, 75%, 1);
-    border-color: hsla(150, 5%, 75%, 1);
-    box-shadow: none;
-    cursor: not-allowed;
-  }
+  display: none;
+}
+
+&:not(:disabled)~label {
+  cursor: pointer;
+}
+
+&:disabled~label {
+  color: hsla(150, 5%, 75%, 1);
+  border-color: hsla(150, 5%, 75%, 1);
+  box-shadow: none;
+  cursor: not-allowed;
+}
 
 
- 
-  
-  
-input[type="radio"]#reponse2:checked + label {
+
+
+
+input[type="radio"]#reponse2:checked+label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
-  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  color: hsla(215, 0%, 100%, 1);
+  /*couleur du texte*/
   border-color: green;
 }
-  &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-  }
-input[type="radio"]#reponse6:checked + label {
+
+&::after {
+  /*s'effectue après la modification du label, sur l'input radio*/
+  font-weight: bold;
+}
+
+input[type="radio"]#reponse6:checked+label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
-  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  color: hsla(215, 0%, 100%, 1);
+  /*couleur du texte*/
   border-color: green;
-  }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-  }
-input[type="radio"]#reponse10:checked + label {
+}
+
+&::after {
+  /*s'effectue après la modification du label, sur l'input radio*/
+  font-weight: bold;
+}
+
+input[type="radio"]#reponse10:checked+label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
-  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  color: hsla(215, 0%, 100%, 1);
+  /*couleur du texte*/
   border-color: green;
-  }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-    }
-input[type="radio"]#reponse14:checked + label {
-  /*Colore le label 2 et change la couleur du texte à l'intérieur */ 
+}
+
+&::after {
+  /*s'effectue après la modification du label, sur l'input radio*/
+  font-weight: bold;
+}
+
+input[type="radio"]#reponse14:checked+label {
+  /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
-  color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
+  color: hsla(215, 0%, 100%, 1);
+  /*couleur du texte*/
   border-color: green;
-  }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-  }
-input[type="radio"]#reponse1:checked + label {
+}
+
+&::after {
+  /*s'effectue après la modification du label, sur l'input radio*/
+  font-weight: bold;
+}
+
+input[type="radio"]#reponse1:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse3:checked + label {
+
+input[type="radio"]#reponse3:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse4:checked + label {
+
+input[type="radio"]#reponse4:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse5:checked + label {
+
+input[type="radio"]#reponse5:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse7:checked + label {
+
+input[type="radio"]#reponse7:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse8:checked + label {
+
+input[type="radio"]#reponse8:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse9:checked + label {
+
+input[type="radio"]#reponse9:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse11:checked + label {
+
+input[type="radio"]#reponse11:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse12:checked + label {
+
+input[type="radio"]#reponse12:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse13:checked + label {
+
+input[type="radio"]#reponse13:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse15:checked + label {
+
+input[type="radio"]#reponse15:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
-input[type="radio"]#reponse16:checked + label {
+
+input[type="radio"]#reponse16:checked+label {
   background: red;
-  border-color:rgb(129, 2, 2);
+  border-color: rgb(129, 2, 2);
   color: white;
   font-weight: bold;
 }
@@ -272,26 +303,34 @@ p {
 }
 
 .score {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
-  font-size: 10rem;
-  margin-bottom: 20rem;
-  border: solid;
-  border-color: white;
-  color: white;
-  border-radius: 30px;
-  border-width: 10px;
+  align-self: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #30024F;
+  background: rgba(230, 230, 230, .3);
+  padding: 2rem;
+  border-radius: 3rem;
+  width: 8rem;
+
+
 }
 
-.titlelastpage {
+.lastimg {
+  size: 0, 25rem;
+}
+
+.textlastpage {
+  display: flex;
   text-align: center;
-  font-size: 5rem;
+  align-self: center;
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+
 }
 
 .w3-border {
-  
+
   display: block;
   border: 2px solid white;
   border-radius: 30px;
@@ -312,4 +351,3 @@ p {
     flex-direction: column;
   }
 }
-
