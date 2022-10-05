@@ -27,15 +27,16 @@
                 oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value)">
                 <div class="segment" id="page1">
                     <h1 class="tester">Quelle cave de champagne ne se trouvent pas a Reims ? </h1>
-                    <input type="radio" class="response bad selected" id="reponse1" name="drone" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse1" name="drone" value=0>
                     <label class="test" for="reponse1"> Les caves de la Maison Taittinger </label>
-                    <input type="radio" class="response good" id="reponse2" name="drone" value=1>
+                    <input type="radio" class="response" data-response="good" id="reponse2" name="drone" value=1>
                     <label for="reponse2">Les caves de la maison Moet & Chandon </label>
-                    <input type="radio" class="response bad" id="reponse3" name="drone" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse3" name="drone" value=0>
                     <label for="reponse3">Les caves de la Maison Ruinart </label>
-                    <input type="radio" class="response bad" id="reponse4" name="drone" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse4" name="drone" value=0>
                     <label for="reponse4">Les caves de la Maison Veuve Clicquot</label>
-                    <a class="valid-button" href="#page2">Valider</a>
+                    <button class="valid-button" type="button" data-input="drone">Valider</button>
+                    <a class="suivant-button" href="#page2">Suivant</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:8%;color:black">0%</div>
                     </div>
@@ -43,53 +44,56 @@
 
                 <div class="segment" id="page2">
                     <h1>Ou se trouve le campus de la Wild Code School a Reims ?</h1>
-                    <input type="radio" class="response bad" id="reponse5" name="drone1" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse5" name="drone1" value=0>
                     <label for="reponse5"> Dans les locaux d’un Pôle Emploi</label>
-                    <input type="radio" class="response good" id="reponse6" name="drone1" value=1>
+                    <input type="radio" class="response" data-response="good" id="reponse6" name="drone1" value=1>
                     <label for="reponse6">Dans les locaux de Quartier Libre</label>
-                    <input type="radio" class="response bad" id="reponse7" name="drone1" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse7" name="drone1" value=0>
                     <label for="reponse7">Dans les locaux de Magasin Libre</label>
-                    <input type="radio" class="response bad" id="reponse8" name="drone1" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse8" name="drone1" value=0>
                     <label for="reponse8">Dans les locaux de Mission locale</label>
-                    <a class="valid-button" href="#page3">Valider</a>
+                    <button class="valid-button" type="button" data-input="drone1">Valider</button>
+                    <a class="suivant-button" href="#page3">Suivant</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:25%;color:black">25%</div>
                     </div>
                 </div>
                 <div class="segment" id="page3">
                     <h1>Quel quartier ne se trouve pas a Reims ?</h1>
-                    <input type="radio" class="response bad" id="reponse9" name="drone2" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse9" name="drone2" value=0>
                     <label for="reponse9">La Neuvillette </label>
-                    <input type="radio" class="response good" id="reponse10" name="drone2" value=1>
+                    <input type="radio" class="response" data-response="good" id="reponse10" name="drone2" value=1>
                     <label for="reponse10">Croix du Nord</label>
-                    <input type="radio" class="response bad" id="reponse11" name="drone2" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse11" name="drone2" value=0>
                     <label for="reponse11">Pommery</label>
-                    <input type="radio" class="response bad" id="reponse12" name="drone2" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse12" name="drone2" value=0>
                     <label for="reponse12">Courlancy</label>
-                    <a class="valid-button" href="#page4">Valider</a>
+                    <button class="valid-button" type="button" data-input="drone2">Valider</button>
+                    <a class="suivant-button" href="#page4">Suivant</a>
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:50%;color:black">50%</div>
                     </div>
                 </div>
                 <div class="segment" id="page4">
                     <h1>Quel est le terminus de la ligne A du tramway remois ?</h1>
-                    <input type="radio" class="response bad" id="reponse13" name="drone3" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse13" name="drone3" value=0>
                     <label for="reponse13"> Dans le ciel </label>
-                    <input type="radio" class="response good" id="reponse14" name="drone3" value=1>
+                    <input type="radio" class="response" data-response="good" id="reponse14" name="drone3" value=1>
                     <label for="reponse14">Neufchatel</label>
-                    <input type="radio" class="response bad" id="reponse15" name="drone3" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse15" name="drone3" value=0>
                     <label for="reponse15"> Gare champagne Ardennes TGV</label>
-                    <input type="radio" class="response bad" id="reponse16" name="drone3" value=0>
+                    <input type="radio" class="response" data-response="bad" id="reponse16" name="drone3" value=0>
                     <label for="reponse16">Bezannes</label>
-                    <a class="valid-button" href="#page5">Valider</a>
+                    <button class="valid-button" type="button" data-input="drone3">Valider</button>
+                    <a class="suivant-button" href="#page5">Suivant</a>
 
                     <div class="w3-border">
                         <div class="w3-bar" style="height:24px;width:75%;color:black">75%</div>
                     </div>
                 </div>
                 <div class="segment" id="page5">
-                
-                   <span></span>
+
+                    <span></span>
                     <h1 class="titlelastpage">Resultat</h1>
                     <output class="score" name="result"> 0 </output>
                     <div class="w3-border">
@@ -100,12 +104,12 @@
         </div>
     </section>
     <script type="text/javascript">
-        function createBubble(){
+        function createBubble() {
             const page = document.querySelector('#page5')
             const createElement = document.createElement('span')
             var size = Math.random() * 60;
 
-            
+
             createElement.style.width = -30 + size + 'px';
             createElement.style.height = -30 + size + 'px';
             createElement.style.left = Math.random() * innerWidth + 'px';
@@ -113,11 +117,13 @@
 
             setTimeout(() => {
                 createElement.remove()
-            },4000)
+            }, 4000)
 
         }
-setInterval(createBubble,1)
+        setInterval(createBubble, 1)
     </script>
+    <script src="script.js"></script>
+</body>
 
 </body>
 

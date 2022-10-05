@@ -33,7 +33,7 @@ label {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   background-color:white;
   border-radius: 15px;
   padding: 1.8rem;  
@@ -91,8 +91,8 @@ body {
   padding: 1.5rem 1.5rem;
   margin-top:1rem;
   background-color: #ffffff;
-opacity: 1;
-background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
+  opacity: 1;
+  background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
   align-self: stretch;
   text-align: center;
   border-width: 5px;
@@ -197,6 +197,9 @@ h2 {
   color: white;
   font-weight: bold;
 }
+
+.
+
 /* Séparation : en haut css de la question 4 */
 p {
   font-weight: 900;
