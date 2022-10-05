@@ -16,4 +16,3 @@ validButtons.forEach((button) => {
         })
     })
 })
-²
