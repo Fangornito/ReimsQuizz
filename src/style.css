@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   /*positioner la marge à 0*/
@@ -88,12 +87,11 @@ body {
 
 .valid-button{
   font-size: 25px;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 6rem;
   margin-top:1rem;
   background-color: #ffffff;
-opacity: 1;
-background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
-  align-self: stretch;
+  opacity: 1;
+  background: repeating-linear-gradient( 45deg, #f0d7ff, #f0d7ff 2px, #f0d7ff 2px, #ffffff 10px );
   text-align: center;
   border-width: 5px;
   text-decoration: none;
@@ -220,27 +218,67 @@ p {
   text-align: center;
   font-size: 5rem;
 }
-
-.w3-border {
-  
-  display: block;
-  border: 2px solid white;
-  border-radius: 30px;
+.desktopnav{
+  display: none;
 }
 
-.w3-bar {
-  border-radius: 30px;
-  display: flex;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-  background-color: cyan;
+@media (min-width:1025px) {
+* {
+  margin: 0;
+  /*positioner la marge à 0*/
+  padding: 0;
+  /*positionner le bord à 0*/
+  --main-color: #C31DA8;
+  /*couleur du background*/
+  /*--font-play:*/
+  --main-font-text: "First School";
+  /*Police d'écriture global du site*/
+  --size-text: 8px;
+  /*Taille général des textes*/
+  --size-play: 2rem;
+  /*Taille du texte des bouttons*/
+  box-sizing: border-box;
 }
-
-
-@media only screen and (max-width: 700px) {
-  section {
-    flex-direction: column;
+  body {
+    max-width: 100%;
   }
-}
 
+  .reponse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-gap: 1rem;
+    padding: 0;
+  }
+  .segment{
+    align-items: center;
+  }
+  .segment>a {
+    border-radius: 10px;
+  }
+  .segment>h1{
+    text-align: center;
+  }
+  .mobilequestion{
+    display: none;
+  }
+  .desktopnav  {
+    background-color: #30024F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .desktopnav>h2{
+    padding: 0;
+  }
+  .desktopnav>img{
+    width: 10%;
+    height: 20%;
+  }
+#playerid {
+  margin-right : 60%;
+}
+  
+  }
