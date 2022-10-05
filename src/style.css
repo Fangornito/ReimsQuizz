@@ -59,6 +59,7 @@ body {
   margin: auto;
   background-size: 844px;
   background-repeat: no-repeat;
+  overflow-x: hidden ;
 }
 
 
@@ -199,17 +200,14 @@ input[type="radio"]#reponse2:checked + label {
   color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
   border-color: green;
 }
-  &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-  }
+  /* &::after {/*s'effectue après la modification du label, sur l'input radio*/
+    /* ;
+  /*}*/ 
 input[type="radio"]#reponse6:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
   background: hsla(150, 75%, 50%, 1);
   color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
   border-color: green;
-  }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
   }
 input[type="radio"]#reponse10:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */
@@ -217,89 +215,83 @@ input[type="radio"]#reponse10:checked + label {
   color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
   border-color: green;
   }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-    }
 input[type="radio"]#reponse14:checked + label {
   /*Colore le label 2 et change la couleur du texte à l'intérieur */ 
   background: hsla(150, 75%, 50%, 1);
   color: hsla(215, 0%, 100%, 1); /*couleur du texte*/
   border-color: green;
   }
-    &::after {/*s'effectue après la modification du label, sur l'input radio*/
-    font-weight: bold;
-  }
 input[type="radio"]#reponse1:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse3:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse4:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse5:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse7:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse8:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse9:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse11:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse12:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse13:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse15:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 input[type="radio"]#reponse16:checked + label {
   background: red;
   border-color:rgb(129, 2, 2);
   color: white;
-  font-weight: bold;
+   ;
 }
 /* Séparation : en haut css de la question 4 */
 p {
