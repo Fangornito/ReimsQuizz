@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+
     <title>ReimsQuizz</title>
 </head>
 
@@ -87,9 +88,8 @@
                     </div>
                 </div>
                 <div class="segment" id="page5">
-
-
-
+                
+                   <span></span>
                     <h1 class="titlelastpage">Resultat</h1>
                     <output class="score" name="result"> 0 </output>
                     <div class="w3-border">
@@ -99,7 +99,25 @@
             </form>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script type="text/javascript">
+        function createBubble(){
+            const page = document.querySelector('#page5')
+            const createElement = document.createElement('span')
+            var size = Math.random() * 60;
+
+            
+            createElement.style.width = -30 + size + 'px';
+            createElement.style.height = -30 + size + 'px';
+            createElement.style.left = Math.random() * innerWidth + 'px';
+            page.appendChild(createElement);
+
+            setTimeout(() => {
+                createElement.remove()
+            },4000)
+
+        }
+setInterval(createBubble,1)
+    </script>
 
 </body>
 
