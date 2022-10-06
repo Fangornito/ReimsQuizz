@@ -1,3 +1,5 @@
+let playername = "";
+const valeur = document.querySelector("#playername");
 const validButtons = document.querySelectorAll(".valid-button")
 validButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -7,3 +9,8 @@ validButtons.forEach((button) => {
         })
     })
 })
+valeur.addEventListener("change", function (event) {
+    playername = event.target.value;
+    const change = document.querySelector(".textlastpage");
+    change.innerText = `félicitations ${playername} voici ton score :`;
+});
