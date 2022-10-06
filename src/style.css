@@ -330,22 +330,25 @@ p {
 }
 
 .score {
-  display: flex;
+  text-align: center;
+  align-self: center;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  font-size: 10rem;
-  margin-bottom: 20rem;
-  border: solid;
-  border-color: white;
-  color: white;
-  border-radius: 30px;
-  border-width: 10px;
+  font-size: 1.5rem;
+  color: #30024F;
+  background: rgba(230, 230, 230, .3);
+  padding: 2rem;
+  border-radius: 3rem;
+  width: 8rem;
 }
-
-.titlelastpage {
+.lastimg {
+ size: 0, 25rem;
+}
+.textelastpage {
+  display:flex;
   text-align: center;
-  font-size: 5rem;
+  align-self: center;
+  font-size: 1.5rem;
+  margin-top:0.2rem;
 }
 .desktopnav{
   display: none;
