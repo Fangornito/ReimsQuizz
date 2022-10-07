@@ -8,24 +8,22 @@
     <link rel="stylesheet" href="src/style.css">
     <title>ReimsQuiz</title>
 </head>
-<body >
-    <section class="segment" id="pageun">
+<body>
+    <form
+    oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value); message.value = (result.value === 2 ? `Pas mal du tout ${joueur.value}` : `Soit t'es trop fort, soit trop nul`)">
+<section class="segment" id="pageun">
         <h1 id="delete">Bienvenue</h1>
-        <img class="main-logo" src="logo-temporaire.png" alt="logo burger" >
-        <form id="playerchamp"action="">
-            <input id="playername" type="text" placeholder="Nom du joueur" name="joueur">
-        </form>
+        <img class="main-logo" src="logo-temporaire.png" alt="logo burger">
+        <input id="playername" type="text" placeholder="Nom du joueur" name="joueur">
         <a href="#pagedeux" class="play-button">JOUER</a>
     </section>
     <section id="pagedeux">
         <div class="corps">
-            <form
-                oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value)">
                 <div class="segment" id="page1">
                   
                         <nav class="desktopnav">
                             <img id="logo" src="titre-logo.png" alt="Titre" >
-                            <h2 id="playerid">Nom d'utilisateur</h2>
+                            <h2 class="playerid  textlastpage"></h2>
                             <h2>Question N°1</h2>
                         </nav>
                     <h1>Quelle cave de champagne ne se trouvent pas a Reims ? </h1>
@@ -41,16 +39,15 @@
                     </div>
                     <button class="valid-button" type="button" data-input="drone">Valider</button>
                     <a class="valid-button" href="#page2">Suivant</a>
-                    <div class="w3-border" style="width:90%; margin-left: 5%" >
-                        <div class="w3-bar" style="height:2%;width:8%;color:black">0</div>
+                    <div class="w3-border">
+                        <div class="w3-bar" style="height:24px;width:8%;color:black">0</div>
                       </div> 
-                    <h2 class="mobilequestion">Question n°1</h2>
                 </div>
 
                 <div class="segment" id="page2">
                     <nav class="desktopnav">
                         <img src="titre-logo.png" alt="Titre" >
-                        <h2 id = "playerid">Nom d'utilisateur</h2>
+                        <h2 class="playerid textlastpage"></h2>
                         <h2>Question N°2</h2>
                     </nav>
                     <h1>Ou se trouve le campus de la Wild Code School a Reims ?</h1>
@@ -67,15 +64,14 @@
                     </div>
                     <button class="valid-button" type="button" data-input="drone1">Valider</button>
                     <a class="valid-button" href="#page3">Suivant</a>
-                    <div class="w3-border" style="width:90%; margin-left: 5%">
-                        <div class="w3-bar" style="height:2%;width:25%;color:black">25%</div>
+                    <div class="w3-border">
+                        <div class="w3-bar" style="height:24px;width:25%;color:black">25%</div>
                     </div>
-                    <h2 class="mobilequestion">Question n°2</h2>
                 </div>
                 <div class="segment" id="page3">
                     <nav class="desktopnav">
                         <img src="titre-logo.png" alt="Titre" >
-                        <h2 id = "playerid">Nom d'utilisateur</h2>
+                        <h2 class = "playerid textlastpage"></h2>
                         <h2>Question N°3</h2>
                     </nav>
                     <h1>Quel quartier ne se trouve pas a Reims ?</h1>
@@ -91,15 +87,14 @@
                     </div>
                     <button class="valid-button" type="button" data-input="drone2">Valider</button>
                     <a class="valid-button" href="#page4">Suivant</a>
-                    <div class="w3-border" style="width:90%;  margin-left: 5%">
-                        <div class="w3-bar" style="height:2%;width:50%;color:black">50</div>
+                    <div class="w3-border">
+                        <div class="w3-bar" style="height:24px;width:50%;color:black">50</div>
                       </div>
-                    <h2 class="mobilequestion">Question n°3</h2>
                 </div>
                 <div class="segment" id="page4">
                     <nav class="desktopnav">
                         <img src="titre-logo.png" alt="Titre" >
-                        <h2 id = "playerid">Nom d'utilisateur</h2>
+                        <h2 class = "playerid textlastpage"></h2>
                         <h2>Question N°4</h2>
                     </nav>
                     <h1>Quel est le terminus de la ligne A du tramway remois ?</h1>
@@ -115,46 +110,25 @@
                     </div>
                     <button class="valid-button" type="button" data-input="drone3">Valider</button>
                     <a class="valid-button" href="#page5">Suivant</a>
-                    <div class="w3-border" style="width:90%; margin-left: 5%">
-                        <div class="w3-bar" style="height:2%;width:75%;color:black">75</div>
+                    <div class="w3-border">
+                        <div class="w3-bar" style="height:24px;width:75%;color:black">75</div>
                       </div>
-                    <h2 class="mobilequestion">Question n°4</h2>
                 </div>
                 <div class="segment" id="page5">
-                    <nav class="desktopnav">
-                        
-                        <h2 id = "playerid">Nom d'utilisateur</h2>
-                        <h2>Question N°3</h2>
-                    </nav>
                     <img class="lastimg" src="logo-temporaire.png" alt ="logo-reims-quiz">
-                         <h2 class="textlastpage"> </h2>
+                    <h2>
+                        <output name="message"></output>
+                    </h2>
                     <output class="score" name="result"> 0 </output>
-                    <a href="#pageun" class="play-button">REJOUER</a>
-                    <div class="w3-border" style="width:90%; margin-left: 5%">
-                        <div class="w3-bar" style="height:2%;width:100%;color:black">100</div>
+                    <a href="index.html" class="play-button">REJOUER</a>
+                    <div class="w3-border">
+                        <div class="w3-bar" style="height:24px;width:100%;color:black">100</div>
                       </div>
                 </div>
-            </form>
         </div>
     </section>
-    <script type="text/javascript">
-        function createBubble(){
-            const page = document.querySelector('#page5')
-            const createElement = document.createElement('span')
-            var size = Math.random() * 60;
-
-            
-            createElement.style.width = -30 + size + 'px';
-            createElement.style.height = -30 + size + 'px';
-            createElement.style.left = Math.random() * innerWidth + 'px';
-            page.appendChild(createElement);
-
-            setTimeout(() => {
-                createElement.remove()
-            },4000)
-
-        }
-            setInterval(createBubble,1)
+</form>
+<script src="src/script.js"></script>
     </script>
 
 </body>
