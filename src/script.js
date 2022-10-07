@@ -1,9 +1,11 @@
-let playername = "";
-const valeur = document.querySelector("#playername");
-valeur.addEventListener("change", function (event) {
-    playername = event.target.value;
-    const change = document.querySelector(".textlastpage");
-    change.innerText = `félicitations ${playername} voici ton score :`;
+let playerName = "";
+const playerNameInput = document.querySelector("#playername");
+const change = document.querySelectorAll(".textlastpage");
+playerNameInput.addEventListener("change", function (event) {
+    playerName = event.target.value;
+    for (let i=0; i < change.length; i++){
+        change[i].innerHTML=`${playerName}`
+    }
 });
 
 
