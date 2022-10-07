@@ -10,7 +10,7 @@
 </head>
 <body>
     <form
-    oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value); message.value = (result.value === 2 ? `Pas mal du tout ${joueur.value}` : `Soit t'es trop fort, soit trop nul`)">
+    oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value); message.value = (result.value < 3 ? `le score est pathétique ${joueur.value}` : result.value>=3 ? `Trop fort ce ${joueur.value}`:``)">
 <section class="segment" id="pageun">
         <h1 id="delete">Bienvenue</h1>
         <img class="main-logo" src="logo-temporaire.png" alt="logo burger">
