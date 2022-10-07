@@ -31,16 +31,19 @@
 }
 
 #playername{
+  max-width: 100%;
   padding: 1rem;
   border-radius: 15px;
   font-family: "Wicked Mouse"; 
   text-align: center;
   box-shadow: 0px 5px #30024F;
+  font-size: 1.75rem;
 }
 #playerchamp{
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 label { 
@@ -83,6 +86,7 @@ label {
 
 .corps{
   padding:0;
+  
 }
 
 body {
@@ -90,26 +94,34 @@ body {
   margin: auto;
   background-size: 844px;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  
 }
+section {
+  max-height: 100%;
+}
+
 
 
 .main-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 5rem;
+  justify-content: center;
+  margin-top: 3rem;
+  max-height: 100%;
   max-width: 100%;
 }
 
+
 .play-button {
-  font-size: var(--size-play);
-  padding: 2rem 2rem;
+  font-size: calc(var(--size-play) * 0.75);
+  
+  max-width: 100%;
+  padding: 1rem 2rem;
   border-radius: 15px;
   background-color: rgb(251, 251, 251);
-  align-self: stretch;
+  
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 2rem;
   border-width: 5px;
   text-decoration: none;
   box-shadow: 0px 8px #30024F;
@@ -117,6 +129,7 @@ body {
   font-family: "Wicked Mouse";  
   margin-bottom: 8rem;
 }
+
 
 .valid-button{
   font-size: 25px;
@@ -173,6 +186,7 @@ h2 {
 
 #page5 {
   position:relative;
+  width: 100%;
   
 }
 #page5 span {
@@ -229,8 +243,7 @@ input[data-response="bad"]:checked + label {
     color: white;
     font-weight: bold;
   }
-  
-/* Séparation : en haut css de la question 4 */
+
 p {
   font-weight: 900;
 }
@@ -294,7 +307,33 @@ p {
 }
   body {
     max-width: 100%;
+    
+  
+
   }
+  .main-logo {
+    
+   
+    max-height: 20%;
+    max-width: 20%;
+  }
+
+  #playerchamp{
+   
+   
+    padding-left: 30%;
+    padding-right: 30%;
+   
+  }
+  
+  
+  .play-button {
+    
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  
+ 
 
   .reponse{
     display: grid;
@@ -303,9 +342,16 @@ p {
     grid-gap: 1rem;
     padding: 0;
   }
-  .segment{
+  .segment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
     align-items: center;
   }
+
+  
   .segment>a {
     border-radius: 10px;
   }
@@ -333,5 +379,14 @@ p {
   #playerid {
   margin-right : 60%;
   }
+  .lastimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    max-height: 20%;
+    max-width: 20%;
+}
+
 
 }
