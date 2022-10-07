@@ -37,6 +37,7 @@
   font-family: "Wicked Mouse"; 
   text-align: center;
   box-shadow: 0px 5px #30024F;
+  font-size: 1.75rem;
 }
 #playerchamp{
   display: flex;
@@ -88,7 +89,6 @@ label {
   
 }
 
-
 body {
   max-width: 800px;
   margin: auto;
@@ -113,13 +113,13 @@ section {
 
 
 .play-button {
-  font-size: var(--size-play);
+  font-size: calc(var(--size-play) * 0.75);
   
   max-width: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 15px;
   background-color: rgb(251, 251, 251);
-  align-self: stretch;
+  
   text-align: center;
   margin-top: 2rem;
   border-width: 5px;
@@ -186,6 +186,7 @@ h2 {
 
 #page5 {
   position:relative;
+  width: 100%;
   
 }
 #page5 span {
@@ -306,9 +307,32 @@ p {
 }
   body {
     max-width: 100%;
+    
   
 
   }
+  .main-logo {
+    
+   
+    max-height: 20%;
+    max-width: 20%;
+  }
+
+  #playerchamp{
+   
+   
+    padding-left: 30%;
+    padding-right: 30%;
+   
+  }
+  
+  
+  .play-button {
+    
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  
  
 
   .reponse{
@@ -322,7 +346,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    
     background: linear-gradient(220deg, #9423C6 35%, #E04484 90%);
     align-items: center;
   }
@@ -355,6 +379,14 @@ p {
   #playerid {
   margin-right : 60%;
   }
+  .lastimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    max-height: 20%;
+    max-width: 20%;
+}
 
 
 }

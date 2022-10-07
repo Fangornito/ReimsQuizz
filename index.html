@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
     <title>ReimsQuiz</title>
 </head>
-<body scroll="no" style="overflow-y: hidden">
+<body >
     <section class="segment" id="pageun">
         <h1 id="delete">Bienvenue</h1>
         <img class="main-logo" src="logo-temporaire.png" alt="logo burger" >
@@ -17,7 +17,7 @@
         </form>
         <a href="#pagedeux" class="play-button">JOUER</a>
     </section>
-    <section class= segment id="pagedeux">
+    <section id="pagedeux">
         <div class="corps">
             <form
                 oninput="result.value=parseInt(drone.value)+ parseInt(drone1.value)+parseInt(drone2.value)+ parseInt(drone3.value)">
@@ -121,6 +121,11 @@
                     <h2 class="mobilequestion">Question n°4</h2>
                 </div>
                 <div class="segment" id="page5">
+                    <nav class="desktopnav">
+                        
+                        <h2 id = "playerid">Nom d'utilisateur</h2>
+                        <h2>Question N°3</h2>
+                    </nav>
                     <img class="lastimg" src="logo-temporaire.png" alt ="logo-reims-quiz">
                          <h2 class="textlastpage"> </h2>
                     <output class="score" name="result"> 0 </output>
